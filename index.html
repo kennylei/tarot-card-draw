@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Tarot Card Draw</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Simple Tarot Card Draw</h1>
+    <p>Draw one tarot card at a time. Each result shows a linked image, the card name, description, element, and what is good vs what is wrong.</p>
+    <button id="drawButton">Draw a Card</button>
+
+    <section id="result" class="card hidden">
+      <div class="card-image">
+        <a id="cardLink" href="#" target="_blank" rel="noopener noreferrer">
+          <img id="cardImage" src="" alt="Tarot card image">
+        </a>
+      </div>
+      <div class="card-details">
+        <h2 id="cardName">Card Name</h2>
+        <p id="cardDescription">Card description appears here after drawing.</p>
+        <div>
+          <h3>Element</h3>
+          <ul id="cardElement"></ul>
+        </div>
+        <div class="summary">
+          <div>
+            <h3>Good</h3>
+            <p id="cardGood"></p>
+          </div>
+          <div>
+            <h3>Wrong</h3>
+            <p id="cardWrong"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
