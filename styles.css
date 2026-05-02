@@ -1,9 +1,14 @@
 :root {
-  --bg: #faf4ef;
-  --card: #ffffff;
-  --text: #2c2a29;
-  --accent: #8d5c3f;
-  --border: #d9c6b8;
+  --bg: #070b17;
+  --bg-alt: #111827;
+  --card: rgba(18, 22, 42, 0.95);
+  --card-strong: rgba(22, 28, 56, 0.98);
+  --text: #e8ebf6;
+  --muted: #9aa4c4;
+  --accent: #8c9bff;
+  --accent-strong: #c3c9ff;
+  --border: rgba(141, 148, 189, 0.24);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -17,43 +22,84 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, #fff5eb 0%, #f2e2d7 45%, #e7d3c7 100%);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
+  background: radial-gradient(circle at top right, rgba(172, 187, 255, 0.12), transparent 15%),
+    radial-gradient(circle at 15% 15%, rgba(255, 255, 255, 0.16), transparent 12%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08), transparent 10%),
+    linear-gradient(180deg, #0a111f 0%, #05080f 35%, #070b17 100%);
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.12) 1px, transparent 1px);
+  background-size: 30px 30px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  right: -120px;
+  top: 20px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle at 30% 30%, rgba(239, 242, 255, 0.65), transparent 55%);
+  filter: blur(18px);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 .container {
-  max-width: 720px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 24px;
+  padding: 32px 24px 48px;
 }
 
 h1 {
   margin-top: 0;
-  color: var(--accent);
+  color: var(--accent-strong);
+  letter-spacing: 0.04em;
+}
+
+p {
+  color: var(--muted);
+  line-height: 1.75;
 }
 
 button {
-  background: var(--accent);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(140, 155, 255, 0.95), rgba(108, 121, 255, 0.9));
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 14px 24px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: transform 0.15s ease, background 0.15s ease;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+  box-shadow: 0 18px 40px rgba(28, 38, 80, 0.18);
 }
 
 button:hover {
-  transform: translateY(-1px);
-  background: #7a4f36;
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, rgba(162, 174, 255, 0.98), rgba(124, 137, 255, 0.95));
+}
+
+button:focus-visible {
+  outline: 2px solid rgba(140, 155, 255, 0.45);
+  outline-offset: 4px;
 }
 
 .toolbar {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 14px;
+  margin: 24px 0 18px;
 }
 
 .gallery {
@@ -65,32 +111,36 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   flex-wrap: wrap;
+}
+
+.gallery-header h2 {
+  margin: 0;
+  color: var(--accent-strong);
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .gallery-card {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: 0 12px 24px rgba(92, 65, 49, 0.08);
+  background: rgba(15, 19, 35, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
   overflow: hidden;
   text-align: left;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-  padding: 0;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
 .gallery-card:hover,
 .gallery-card:focus {
-  transform: translateY(-2px);
-  box-shadow: 0 16px 28px rgba(92, 65, 49, 0.16);
+  transform: translateY(-4px);
+  box-shadow: 0 22px 50px rgba(15, 25, 55, 0.35);
+  border-color: rgba(140, 155, 255, 0.22);
 }
 
 .gallery-card img {
@@ -98,31 +148,26 @@ button:hover {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
+  filter: saturate(0.96) contrast(1.02);
 }
 
 .gallery-card p {
   margin: 0;
-  padding: 12px;
+  padding: 14px 12px;
   font-size: 0.95rem;
   color: var(--text);
 }
 
 .card {
   margin-top: 24px;
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(92, 65, 49, 0.12);
+  background: rgba(12, 16, 30, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 20px;
-  border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(92, 65, 49, 0.12);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 20px;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
 }
 
 .card.hidden {
@@ -134,42 +179,80 @@ button:hover {
   display: block;
   object-fit: cover;
   min-height: 320px;
+  filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.45));
 }
 
 .card-details {
-  padding: 24px;
+  padding: 28px;
 }
 
 .card-details h2 {
   margin-top: 0;
-  color: var(--accent);
+  color: var(--accent-strong);
 }
 
-.card-details p {
-  line-height: 1.6;
+.card-details p,
+.gallery-card p,
+.card-details ul,
+.summary p {
+  color: var(--muted);
 }
 
 .card-details ul {
   padding-left: 1.2rem;
 }
 
-.summary {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.summary h3 {
+.card-details li {
   margin-bottom: 8px;
 }
 
-@media (max-width: 720px) {
-  button {
-    width: 100%;
+.summary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.summary h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.summary p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 840px) {
+  .container {
+    padding: 24px 18px 36px;
   }
 
   .card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gallery-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .gallery-card p {
+    padding: 12px 10px;
+  }
+
+  .card-details {
+    padding: 18px;
+  }
+
+  .summary {
     grid-template-columns: 1fr;
   }
 }
