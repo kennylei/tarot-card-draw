@@ -9,8 +9,19 @@
 <body>
   <main class="container">
     <h1>Simple Tarot Card Draw</h1>
-    <p>Draw one tarot card at a time. Each result shows a linked image, the card name, description, element, and what is good vs what is wrong.</p>
-    <button id="drawButton">Draw a Card</button>
+    <p>Draw one tarot card at a time or browse the full deck. Tap a thumbnail to view a single card in the same detailed card layout.</p>
+    <div class="toolbar">
+      <button id="drawButton">Draw a Card</button>
+      <button id="viewGalleryButton">Browse All Cards</button>
+    </div>
+
+    <section id="gallery" class="gallery hidden">
+      <div class="gallery-header">
+        <h2>All Tarot Cards</h2>
+        <button id="backToDrawButton">Back to Draw</button>
+      </div>
+      <div id="cardGallery" class="gallery-grid"></div>
+    </section>
 
     <section id="result" class="card hidden">
       <div class="card-image">
