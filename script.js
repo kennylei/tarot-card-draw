@@ -705,7 +705,6 @@ const tarotCards = [
 
 const drawButton = document.getElementById('drawButton');
 const viewGalleryButton = document.getElementById('viewGalleryButton');
-const backToDrawButton = document.getElementById('backToDrawButton');
 const backFromCardButton = document.getElementById('backFromCardButton');
 const gallerySection = document.getElementById('gallery');
 const cardGallery = document.getElementById('cardGallery');
@@ -783,7 +782,6 @@ function drawCard() {
 
 drawButton.addEventListener('click', drawCard);
 viewGalleryButton.addEventListener('click', showGallery);
-backToDrawButton.addEventListener('click', showDrawMode);
 backFromCardButton.addEventListener('click', showDrawMode);
 
 createGallery();
