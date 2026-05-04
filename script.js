@@ -704,11 +704,18 @@ const tarotCards = [
 ];
 
 const drawButton = document.getElementById('drawButton');
+const drawThreeButton = document.getElementById('drawThreeButton');
 const viewGalleryButton = document.getElementById('viewGalleryButton');
 const backFromCardButton = document.getElementById('backFromCardButton');
+const backFromThreeButton = document.getElementById('backFromThreeButton');
 const gallerySection = document.getElementById('gallery');
 const cardGallery = document.getElementById('cardGallery');
 const resultSection = document.getElementById('result');
+const singleCardContainer = document.getElementById('singleCardContainer');
+const threeCardsContainer = document.getElementById('threeCardsContainer');
+const card1 = document.getElementById('card1');
+const card2 = document.getElementById('card2');
+const card3 = document.getElementById('card3');
 const cardImage = document.getElementById('cardImage');
 const cardLink = document.getElementById('cardLink');
 const cardName = document.getElementById('cardName');
@@ -772,6 +779,24 @@ function showCard(card) {
   });
 
   resultSection.classList.remove('hidden');
+  singleCardContainer.classList.remove('hidden');
+  threeCardsContainer.classList.add('hidden');
+}
+
+function showThreeCards(cards) {
+  resultSection.classList.remove('hidden');
+  const cardContainers = [card1, card2, card3];
+  cards.forEach((card, index) => {
+    const container = cardContainers[index];
+    container.innerHTML = `
+      <img src="${card.imageUrl}" alt="${card.name}">
+      <h3>${card.name}</h3>
+      <p>${card.description}</p>
+    `;
+  });
+
+  singleCardContainer.classList.add('hidden');
+  threeCardsContainer.classList.remove('hidden');
 }
 
 function drawCard() {
@@ -780,8 +805,19 @@ function drawCard() {
   showCard(card);
 }
 
+function drawThreeCards() {
+  const cards = [];
+  for (let i = 0; i < 3; i++) {
+    cards.push(getRandomCard());
+  }
+  showDrawMode();
+  showThreeCards(cards);
+}
+
 drawButton.addEventListener('click', drawCard);
+drawThreeButton.addEventListener('click', drawThreeCards);
 viewGalleryButton.addEventListener('click', showGallery);
 backFromCardButton.addEventListener('click', showDrawMode);
+backFromThreeButton.addEventListener('click', showDrawMode);
 
 createGallery();

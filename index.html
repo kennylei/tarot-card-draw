@@ -12,6 +12,7 @@
     <p>Draw one tarot card at a time or browse the full deck. Tap a thumbnail to view a single card in the same detailed card layout.</p>
     <div class="toolbar">
       <button id="drawButton">Draw a Card</button>
+      <button id="drawThreeButton">Draw 3 Cards</button>
       <button id="viewGalleryButton">Browse All Cards</button>
     </div>
 
@@ -23,30 +24,43 @@
     </section>
 
     <section id="result" class="card hidden">
-      <div class="card-image">
-        <a id="cardLink" href="#" target="_blank" rel="noopener noreferrer">
-          <img id="cardImage" src="" alt="Tarot card image">
-        </a>
+      <div id="singleCardContainer" class="single-card-view">
+        <div class="card-image">
+          <a id="cardLink" href="#" target="_blank" rel="noopener noreferrer">
+            <img id="cardImage" src="" alt="Tarot card image">
+          </a>
+        </div>
+        <div class="card-details">
+          <div class="card-header">
+            <h2 id="cardName">Card Name</h2>
+            <button id="backFromCardButton" type="button">Back to Draw</button>
+          </div>
+          <p id="cardDescription">Card description appears here after drawing.</p>
+          <div>
+            <h3>Element</h3>
+            <ul id="cardElement"></ul>
+          </div>
+          <div class="summary">
+            <div>
+              <h3>Good</h3>
+              <p id="cardGood"></p>
+            </div>
+            <div>
+              <h3>Wrong</h3>
+              <p id="cardWrong"></p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card-details">
+      <div id="threeCardsContainer" class="hidden">
         <div class="card-header">
-          <h2 id="cardName">Card Name</h2>
-          <button id="backFromCardButton" type="button">Back to Draw</button>
+          <h2>Your Three Cards</h2>
+          <button id="backFromThreeButton" type="button">Back to Draw</button>
         </div>
-        <p id="cardDescription">Card description appears here after drawing.</p>
-        <div>
-          <h3>Element</h3>
-          <ul id="cardElement"></ul>
-        </div>
-        <div class="summary">
-          <div>
-            <h3>Good</h3>
-            <p id="cardGood"></p>
-          </div>
-          <div>
-            <h3>Wrong</h3>
-            <p id="cardWrong"></p>
-          </div>
+        <div class="three-cards-grid">
+          <div class="three-card-item" id="card1"></div>
+          <div class="three-card-item" id="card2"></div>
+          <div class="three-card-item" id="card3"></div>
         </div>
       </div>
     </section>
