@@ -2,7 +2,7 @@ const tarotCards = [
   {
     name: "The Fool",
     description: "A fresh start, new possibilities, and a leap of faith.",
-    element: ["Air", "Inspiration", "Beginnings"],
+    element: ["Spirit", "Freedom", "Beginnings"],
     good: {
       "Work & Career": "Embrace new opportunities and creative projects with confidence.",
       "Relationships": "Open your heart to new connections and spontaneous adventures.",
@@ -21,7 +21,7 @@ const tarotCards = [
   {
     name: "The Magician",
     description: "Skill, resourcefulness, and manifesting your desires.",
-    element: ["Air", "Will", "Manifestation"],
+    element: ["All Elements", "Will", "Manifestation"],
     good: {
       "Work & Career": "You have all the tools and skills needed to achieve your professional goals.",
       "Relationships": "Communicate your intentions clearly and use your charisma to connect.",
@@ -40,7 +40,7 @@ const tarotCards = [
   {
     name: "The High Priestess",
     description: "Intuition, inner knowledge, and secrets.",
-    element: ["Water", "Intuition", "Mystery"],
+    element: ["Water", "Intuition", "Subconscious"],
     good: {
       "Work & Career": "Trust your instincts about professional opportunities and timing.",
       "Relationships": "Listen to your inner voice about relationship dynamics and trust.",
@@ -59,7 +59,7 @@ const tarotCards = [
   {
     name: "The Empress",
     description: "Abundance, creativity, and nurturing energy.",
-    element: ["Earth", "Growth", "Fertility"],
+    element: ["Earth", "Nurturing", "Abundance"],
     good: {
       "Work & Career": "Nurture creative projects and find abundance in your professional endeavors.",
       "Relationships": "Foster deep emotional connections and mutual care in partnerships.",
@@ -78,7 +78,7 @@ const tarotCards = [
   {
     name: "The Emperor",
     description: "Structure, authority, and leadership.",
-    element: ["Fire", "Authority", "Order"],
+    element: ["Fire", "Authority", "Structure"],
     good: {
       "Work & Career": "Establish strong leadership and create stable professional foundations.",
       "Relationships": "Provide security and structure in partnerships with clear boundaries.",
@@ -97,7 +97,7 @@ const tarotCards = [
   {
     name: "The Hierophant",
     description: "Tradition, guidance, and shared values.",
-    element: ["Earth", "Tradition", "Wisdom"],
+    element: ["Earth", "Tradition", "Spiritual Wisdom"],
     good: {
       "Work & Career": "Seek mentorship and follow established professional paths to success.",
       "Relationships": "Build connections based on shared values and spiritual growth.",
@@ -116,7 +116,7 @@ const tarotCards = [
   {
     name: "The Lovers",
     description: "Choice, harmony, and meaningful partnerships.",
-    element: ["Air", "Connection", "Decision"],
+    element: ["Air", "Connection", "Choice"],
     good: {
       "Work & Career": "Find harmony in collaborative projects and meaningful professional partnerships.",
       "Relationships": "Experience deep connection and make choices that honor love.",
@@ -135,7 +135,7 @@ const tarotCards = [
   {
     name: "The Chariot",
     description: "Determination, movement, and willpower.",
-    element: ["Water", "Drive", "Victory"],
+    element: ["Water", "Control", "Victory"],
     good: {
       "Work & Career": "Channel focused determination to overcome professional obstacles.",
       "Relationships": "Navigate relationship challenges with balanced willpower and direction.",
@@ -154,7 +154,7 @@ const tarotCards = [
   {
     name: "Strength",
     description: "Courage, compassion, and inner power.",
-    element: ["Fire", "Courage", "Fortitude"],
+    element: ["Fire", "Courage", "Inner Strength"],
     good: {
       "Work & Career": "Approach challenges with gentle strength and compassionate leadership.",
       "Relationships": "Show courage in vulnerability and strength in forgiveness.",
@@ -173,7 +173,7 @@ const tarotCards = [
   {
     name: "The Hermit",
     description: "Reflection, solitude, and inner guidance.",
-    element: ["Earth", "Solitude", "Insight"],
+    element: ["Earth", "Solitude", "Inner Guidance"],
     good: {
       "Work & Career": "Take time for focused reflection to gain professional clarity.",
       "Relationships": "Use solitude to understand your needs and deepen authentic connections.",
@@ -192,7 +192,7 @@ const tarotCards = [
   {
     name: "Wheel of Fortune",
     description: "Cycles, change, and destiny.",
-    element: ["Fire", "Change", "Luck"],
+    element: ["Fire", "Cycles", "Destiny"],
     good: {
       "Work & Career": "Embrace career changes and trust in the natural flow of opportunity.",
       "Relationships": "Allow relationships to evolve naturally through life's cycles.",
@@ -211,7 +211,7 @@ const tarotCards = [
   {
     name: "Justice",
     description: "Balance, fairness, and clarity.",
-    element: ["Air", "Truth", "Justice"],
+    element: ["Air", "Truth", "Balance"],
     good: {
       "Work & Career": "Seek fair outcomes and make decisions based on clear facts.",
       "Relationships": "Practice honesty and fairness in all interactions.",
@@ -249,7 +249,7 @@ const tarotCards = [
   {
     name: "Death",
     description: "Transformation, endings, and new beginnings.",
-    element: ["Water", "Transformation", "Release"],
+    element: ["Water", "Transformation", "Endings"],
     good: {
       "Work & Career": "Embrace career transformations that lead to renewed purpose.",
       "Relationships": "Allow relationships to evolve or end naturally for growth.",
@@ -268,7 +268,7 @@ const tarotCards = [
   {
     name: "Temperance",
     description: "Balance, moderation, and healing.",
-    element: ["Fire", "Balance", "Healing"],
+    element: ["Fire", "Moderation", "Harmony"],
     good: {
       "Work & Career": "Find balance between effort and rest in your professional life.",
       "Relationships": "Practice moderation and patience in all interactions.",
@@ -287,7 +287,7 @@ const tarotCards = [
   {
     name: "The Devil",
     description: "Temptation, attachments, and shadow work.",
-    element: ["Earth", "Attachment", "Shadow"],
+    element: ["Earth", "Attachment", "Materialism"],
     good: {
       "Work & Career": "Examine unhealthy work patterns and reclaim your professional power.",
       "Relationships": "Face relationship attachments and break free from toxic dynamics.",
@@ -306,7 +306,7 @@ const tarotCards = [
   {
     name: "The Tower",
     description: "Upheaval, revelation, and liberation.",
-    element: ["Fire", "Change", "Breakthrough"],
+    element: ["Fire", "Upheaval", "Revelation"],
     good: {
       "Work & Career": "Sudden changes can clear the way for authentic professional growth.",
       "Relationships": "Revelations bring necessary clarity to relationship dynamics.",
@@ -325,7 +325,7 @@ const tarotCards = [
   {
     name: "The Star",
     description: "Hope, inspiration, and renewal.",
-    element: ["Air", "Hope", "Guidance"],
+    element: ["Air", "Hope", "Renewal"],
     good: {
       "Work & Career": "Renewed inspiration brings clarity to your professional vision.",
       "Relationships": "Hope and faith strengthen connections and attract positive partnerships.",
@@ -344,7 +344,7 @@ const tarotCards = [
   {
     name: "The Moon",
     description: "Intuition, dreams, and uncertainty.",
-    element: ["Water", "Intuition", "Mystery"],
+    element: ["Water", "Illusion", "Subconscious"],
     good: {
       "Work & Career": "Trust your intuition about professional opportunities and hidden factors.",
       "Relationships": "Explore emotional depths and honor intuitive relationship insights.",
@@ -382,7 +382,7 @@ const tarotCards = [
   {
     name: "Judgement",
     description: "Awakening, calling, and renewal.",
-    element: ["Fire", "Judgement", "Renewal"],
+    element: ["Fire", "Awakening", "Rebirth"],
     good: {
       "Work & Career": "A calling emerges that aligns with your true professional purpose.",
       "Relationships": "Renew relationships through honest self-reflection and forgiveness.",
@@ -401,7 +401,7 @@ const tarotCards = [
   {
     name: "The World",
     description: "Completion, achievement, and wholeness.",
-    element: ["Earth", "Completion", "Success"],
+    element: ["All Elements", "Completion", "Integration"],
     good: {
       "Work & Career": "Professional goals are achieved with a sense of completion and wholeness.",
       "Relationships": "Relationships reach fulfilling stages of mutual understanding.",
@@ -420,7 +420,7 @@ const tarotCards = [
   {
     name: "Ace of Cups",
     description: "A new emotional beginning, open heart, and overflowing intuition.",
-    element: ["Water", "Cups", "Ace"],
+    element: ["Water", "Cups", "New Emotion"],
     good: {
       "Work & Career": "New creative opportunities or emotional fulfillment in work.",
       "Relationships": "A new emotional connection or deepening of existing bonds.",
@@ -439,7 +439,7 @@ const tarotCards = [
   {
     name: "Two of Cups",
     description: "Partnership, mutual attraction, and heartfelt connection.",
-    element: ["Water", "Cups", "Two"],
+    element: ["Water", "Cups", "Union"],
     good: {
       "Work & Career": "Harmonious collaboration and balanced professional partnerships.",
       "Relationships": "Mutual understanding and emotional balance in relationships.",
@@ -458,7 +458,7 @@ const tarotCards = [
   {
     name: "Three of Cups",
     description: "Friendship, celebration, and joyful emotional communion.",
-    element: ["Water", "Cups", "Three"],
+    element: ["Water", "Cups", "Celebration"],
     good: {
       "Work & Career": "Celebrate team achievements and collaborative success.",
       "Relationships": "Joyful social connections and community celebrations.",
@@ -477,7 +477,7 @@ const tarotCards = [
   {
     name: "Four of Cups",
     description: "Withdrawal, contemplation, and the need to notice emotional offers.",
-    element: ["Water", "Cups", "Four"],
+    element: ["Water", "Cups", "Contemplation"],
     good: {
       "Work & Career": "Take time to appreciate current professional stability and blessings.",
       "Relationships": "Find contentment in existing relationships and emotional security.",
@@ -496,7 +496,7 @@ const tarotCards = [
   {
     name: "Five of Cups",
     description: "Loss, regret, and healing through emotional acceptance.",
-    element: ["Water", "Cups", "Five"],
+    element: ["Water", "Cups", "Loss"],
     good: {
       "Work & Career": "Learn from professional disappointments and focus on remaining opportunities.",
       "Relationships": "Process emotional losses and find strength in surviving connections.",
@@ -515,7 +515,7 @@ const tarotCards = [
   {
     name: "Six of Cups",
     description: "Nostalgia, healing memories, and sweetness from the past.",
-    element: ["Water", "Cups", "Six"],
+    element: ["Water", "Cups", "Nostalgia"],
     good: {
       "Work & Career": "Nostalgic wisdom brings gentle progress in professional life.",
       "Relationships": "Innocent joy and healing memories strengthen connections.",
@@ -534,7 +534,7 @@ const tarotCards = [
   {
     name: "Seven of Cups",
     description: "Dreams, choices, and the need to see clearly through emotion.",
-    element: ["Water", "Cups", "Seven"],
+    element: ["Water", "Cups", "Illusion"],
     good: {
       "Work & Career": "Dream big but choose practical professional paths with care.",
       "Relationships": "Navigate relationship choices with clarity and emotional wisdom.",
@@ -553,7 +553,7 @@ const tarotCards = [
   {
     name: "Eight of Cups",
     description: "Leaving what no longer fulfills you to seek deeper emotional truth.",
-    element: ["Water", "Cups", "Eight"],
+    element: ["Water", "Cups", "Withdrawal"],
     good: {
       "Work & Career": "Walk away from unfulfilling work to pursue emotional satisfaction.",
       "Relationships": "Leave relationships that no longer serve your emotional growth.",
@@ -572,7 +572,7 @@ const tarotCards = [
   {
     name: "Nine of Cups",
     description: "Emotional fulfillment, wish-fulfillment, and inner contentment.",
-    element: ["Water", "Cups", "Nine"],
+    element: ["Water", "Cups", "Fulfillment"],
     good: {
       "Work & Career": "Professional wishes fulfilled bring emotional satisfaction.",
       "Relationships": "Deep emotional fulfillment and contentment in connections.",
@@ -591,7 +591,7 @@ const tarotCards = [
   {
     name: "Ten of Cups",
     description: "Complete emotional harmony, family joy, and lasting peace.",
-    element: ["Water", "Cups", "Ten"],
+    element: ["Water", "Cups", "Harmony"],
     good: {
       "Work & Career": "Professional fulfillment brings emotional happiness and success.",
       "Relationships": "Perfect emotional harmony and lasting love in relationships.",
@@ -610,7 +610,7 @@ const tarotCards = [
   {
     name: "Page of Cups",
     description: "A tender message, intuition, and new emotional creativity.",
-    element: ["Water", "Cups", "Page"],
+    element: ["Water", "Cups", "Curiosity"],
     good: {
       "Work & Career": "Creative inspiration and intuitive professional opportunities.",
       "Relationships": "New emotional connections and heartfelt communications.",
@@ -629,7 +629,7 @@ const tarotCards = [
   {
     name: "Knight of Cups",
     description: "Romantic pursuit, heartfelt invitation, and inspired emotion.",
-    element: ["Water", "Cups", "Knight"],
+    element: ["Water", "Cups", "Romance"],
     good: {
       "Work & Career": "Passionate pursuit of creative or emotionally fulfilling work.",
       "Relationships": "Romantic pursuit and emotional commitment in love.",
@@ -648,7 +648,7 @@ const tarotCards = [
   {
     name: "Queen of Cups",
     description: "Deep empathy, caring intuition, and emotional support.",
-    element: ["Water", "Cups", "Queen"],
+    element: ["Water", "Cups", "Compassion"],
     good: {
       "Work & Career": "Emotional intelligence and nurturing leadership in professional settings.",
       "Relationships": "Deep empathy and emotional wisdom in partnerships.",
@@ -667,7 +667,7 @@ const tarotCards = [
   {
     name: "King of Cups",
     description: "Calm emotional authority, compassionate clarity, and wise feeling.",
-    element: ["Water", "Cups", "King"],
+    element: ["Water", "Cups", "Emotional Mastery"],
     good: {
       "Work & Career": "Emotional mastery and balanced leadership in professional life.",
       "Relationships": "Mature emotional control and compassionate partnership.",
@@ -686,7 +686,7 @@ const tarotCards = [
   {
     name: "Ace of Pentacles",
     description: "A new material opportunity, grounded potential, and abundance in the making.",
-    element: ["Earth", "Pentacles", "Ace"],
+    element: ["Earth", "Pentacles", "Opportunity"],
     good: {
       "Work & Career": "New financial or career opportunities bring material abundance.",
       "Relationships": "Stable foundations support healthy relationship growth.",
@@ -705,7 +705,7 @@ const tarotCards = [
   {
     name: "Two of Pentacles",
     description: "Balance, adaptability, and pragmatic juggling of work, money, and priorities.",
-    element: ["Earth", "Pentacles", "Two"],
+    element: ["Earth", "Pentacles", "Balance"],
     good: {
       "Work & Career": "Balance multiple work responsibilities and financial priorities.",
       "Relationships": "Harmonious sharing of material responsibilities in partnerships.",
@@ -724,7 +724,7 @@ const tarotCards = [
   {
     name: "Three of Pentacles",
     description: "Teamwork, skilled craftsmanship, and building something of lasting value.",
-    element: ["Earth", "Pentacles", "Three"],
+    element: ["Earth", "Pentacles", "Collaboration"],
     good: {
       "Work & Career": "Collaborative work projects lead to material success and recognition.",
       "Relationships": "Building shared material goals strengthens partnerships.",
@@ -743,7 +743,7 @@ const tarotCards = [
   {
     name: "Four of Pentacles",
     description: "Security, control, and holding tight to resources for stability.",
-    element: ["Earth", "Pentacles", "Four"],
+    element: ["Earth", "Pentacles", "Control"],
     good: {
       "Work & Career": "Financial security and stable work foundations provide peace.",
       "Relationships": "Material stability supports secure, committed relationships.",
@@ -762,7 +762,7 @@ const tarotCards = [
   {
     name: "Five of Pentacles",
     description: "Hardship, scarcity, and the call to seek support during material struggle.",
-    element: ["Earth", "Pentacles", "Five"],
+    element: ["Earth", "Pentacles", "Hardship"],
     good: {
       "Work & Career": "Financial challenges teach resourcefulness and build resilience.",
       "Relationships": "Material hardship can strengthen true partnerships.",
@@ -781,7 +781,7 @@ const tarotCards = [
   {
     name: "Six of Pentacles",
     description: "Generosity, sharing abundance, and a balanced flow of giving and receiving.",
-    element: ["Earth", "Pentacles", "Six"],
+    element: ["Earth", "Pentacles", "Generosity"],
     good: {
       "Work & Career": "Generous sharing of knowledge and resources benefits your career.",
       "Relationships": "Balanced giving and receiving creates healthy partnerships.",
@@ -800,7 +800,7 @@ const tarotCards = [
   {
     name: "Seven of Pentacles",
     description: "Patient investment, steady effort, and reassessing progress before the next step.",
-    element: ["Earth", "Pentacles", "Seven"],
+    element: ["Earth", "Pentacles", "Patience"],
     good: {
       "Work & Career": "Patient investment in work brings long-term professional rewards.",
       "Relationships": "Nurturing relationships over time creates lasting bonds.",
@@ -819,7 +819,7 @@ const tarotCards = [
   {
     name: "Eight of Pentacles",
     description: "Diligence, mastery, and practical skill development through focused work.",
-    element: ["Earth", "Pentacles", "Eight"],
+    element: ["Earth", "Pentacles", "Craftsmanship"],
     good: {
       "Work & Career": "Dedicated craftsmanship and skill development lead to mastery.",
       "Relationships": "Consistent effort in relationships builds trust and intimacy.",
@@ -838,7 +838,7 @@ const tarotCards = [
   {
     name: "Nine of Pentacles",
     description: "Independence, prosperity, and the enjoyment of earned comfort.",
-    element: ["Earth", "Pentacles", "Nine"],
+    element: ["Earth", "Pentacles", "Independence"],
     good: {
       "Work & Career": "Financial independence and professional success through discipline.",
       "Relationships": "Self-sufficient relationships based on mutual respect.",
@@ -857,7 +857,7 @@ const tarotCards = [
   {
     name: "Ten of Pentacles",
     description: "Legacy, family security, and material fulfillment across generations.",
-    element: ["Earth", "Pentacles", "Ten"],
+    element: ["Earth", "Pentacles", "Legacy"],
     good: {
       "Work & Career": "Legacy of professional success and family business stability.",
       "Relationships": "Long-term committed partnerships with shared prosperity.",
@@ -876,7 +876,7 @@ const tarotCards = [
   {
     name: "Page of Pentacles",
     description: "Practical curiosity, new learning, and the first step toward material growth.",
-    element: ["Earth", "Pentacles", "Page"],
+    element: ["Earth", "Pentacles", "Learning"],
     good: {
       "Work & Career": "New learning opportunities and practical skill development.",
       "Relationships": "Grounded new connections with shared practical interests.",
@@ -895,7 +895,7 @@ const tarotCards = [
   {
     name: "Knight of Pentacles",
     description: "Steady progress, reliable effort, and persistence toward practical goals.",
-    element: ["Earth", "Pentacles", "Knight"],
+    element: ["Earth", "Pentacles", "Persistence"],
     good: {
       "Work & Career": "Steady, reliable work ethic leads to material success.",
       "Relationships": "Committed, dependable partnership with practical support.",
@@ -914,7 +914,7 @@ const tarotCards = [
   {
     name: "Queen of Pentacles",
     description: "Nurturing abundance, practical care, and grounded emotional support.",
-    element: ["Earth", "Pentacles", "Queen"],
+    element: ["Earth", "Pentacles", "Nurturing"],
     good: {
       "Work & Career": "Nurturing leadership with practical wisdom and care.",
       "Relationships": "Emotionally supportive partnerships with material stability.",
@@ -933,7 +933,7 @@ const tarotCards = [
   {
     name: "King of Pentacles",
     description: "Financial mastery, wise stewardship, and dependable material leadership.",
-    element: ["Earth", "Pentacles", "King"],
+    element: ["Earth", "Pentacles", "Mastery"],
     good: {
       "Work & Career": "Masterful business acumen and financial leadership.",
       "Relationships": "Stable, prosperous partnerships with mutual respect.",
@@ -952,7 +952,7 @@ const tarotCards = [
   {
     name: "Ace of Swords",
     description: "Mental clarity, breakthrough ideas, and truth cutting through confusion.",
-    element: ["Air", "Swords", "Ace"],
+    element: ["Air", "Swords", "Clarity"],
     good: {
       "Work & Career": "Clear thinking and new ideas bring professional breakthroughs.",
       "Relationships": "Honest communication establishes strong relationship foundations.",
@@ -971,7 +971,7 @@ const tarotCards = [
   {
     name: "Two of Swords",
     description: "A stalemate, tough choice, and the need for inner balance.",
-    element: ["Air", "Swords", "Two"],
+    element: ["Air", "Swords", "Indecision"],
     good: {
       "Work & Career": "Balanced decision-making and fair professional negotiations.",
       "Relationships": "Mutual understanding and compromise in partnerships.",
@@ -990,7 +990,7 @@ const tarotCards = [
   {
     name: "Three of Swords",
     description: "Heartache, painful truth, and emotional release through clarity.",
-    element: ["Air", "Swords", "Three"],
+    element: ["Air", "Swords", "Heartbreak"],
     good: {
       "Work & Career": "Necessary conflicts lead to professional growth and clarity.",
       "Relationships": "Heartbreak teaches valuable lessons about love and boundaries.",
@@ -1009,7 +1009,7 @@ const tarotCards = [
   {
     name: "Four of Swords",
     description: "Rest, recovery, and thoughtful retreat to restore the mind.",
-    element: ["Air", "Swords", "Four"],
+    element: ["Air", "Swords", "Rest"],
     good: {
       "Work & Career": "Mental rest and reflection improve professional performance.",
       "Relationships": "Peaceful separation allows for relationship assessment.",
@@ -1028,7 +1028,7 @@ const tarotCards = [
   {
     name: "Five of Swords",
     description: "Conflict, pride, and the consequences of winning at the wrong cost.",
-    element: ["Air", "Swords", "Five"],
+    element: ["Air", "Swords", "Conflict"],
     good: {
       "Work & Career": "Strategic thinking helps navigate professional conflicts.",
       "Relationships": "Learning conflict resolution skills improves relationships.",
@@ -1047,7 +1047,7 @@ const tarotCards = [
   {
     name: "Six of Swords",
     description: "Transition, moving forward, and mental relief after struggle.",
-    element: ["Air", "Swords", "Six"],
+    element: ["Air", "Swords", "Transition"],
     good: {
       "Work & Career": "Moving past professional difficulties brings mental peace.",
       "Relationships": "Transitioning from toxic relationships creates emotional freedom.",
@@ -1066,7 +1066,7 @@ const tarotCards = [
   {
     name: "Seven of Swords",
     description: "Strategy, secrecy, and the fine line between cleverness and deceit.",
-    element: ["Air", "Swords", "Seven"],
+    element: ["Air", "Swords", "Strategy"],
     good: {
       "Work & Career": "Strategic thinking and careful planning ensure success.",
       "Relationships": "Honest communication prevents misunderstandings.",
@@ -1085,7 +1085,7 @@ const tarotCards = [
   {
     name: "Eight of Swords",
     description: "Restriction, self-doubt, and the mental barriers that hold you back.",
-    element: ["Air", "Swords", "Eight"],
+    element: ["Air", "Swords", "Restriction"],
     good: {
       "Work & Career": "Breaking free from mental limitations opens professional doors.",
       "Relationships": "Recognizing self-imposed restrictions improves relationships.",
@@ -1104,7 +1104,7 @@ const tarotCards = [
   {
     name: "Nine of Swords",
     description: "Anxiety, worry, and the need to face fear before it overwhelms you.",
-    element: ["Air", "Swords", "Nine"],
+    element: ["Air", "Swords", "Anxiety"],
     good: {
       "Work & Career": "Facing professional fears leads to mental relief and clarity.",
       "Relationships": "Processing relationship anxieties brings peace.",
@@ -1123,7 +1123,7 @@ const tarotCards = [
   {
     name: "Ten of Swords",
     description: "Rock bottom, painful endings, and the chance for a new mental beginning.",
-    element: ["Air", "Swords", "Ten"],
+    element: ["Air", "Swords", "Endings"],
     good: {
       "Work & Career": "End of difficult professional cycles brings mental liberation.",
       "Relationships": "Release from toxic relationships allows healing.",
@@ -1142,7 +1142,7 @@ const tarotCards = [
   {
     name: "Page of Swords",
     description: "Curious mind, fresh ideas, and messages that sharpen understanding.",
-    element: ["Air", "Swords", "Page"],
+    element: ["Air", "Swords", "Curiosity"],
     good: {
       "Work & Career": "New ideas and clear communication enhance professional skills.",
       "Relationships": "Honest conversations bring fresh perspectives to relationships.",
@@ -1161,7 +1161,7 @@ const tarotCards = [
   {
     name: "Knight of Swords",
     description: "Fast action, direct communication, and bold pursuit of truth.",
-    element: ["Air", "Swords", "Knight"],
+    element: ["Air", "Swords", "Action"],
     good: {
       "Work & Career": "Bold ideas and quick thinking drive professional success.",
       "Relationships": "Direct communication and intellectual connection in partnerships.",
@@ -1180,7 +1180,7 @@ const tarotCards = [
   {
     name: "Queen of Swords",
     description: "Clear thinking, independence, and wise, honest communication.",
-    element: ["Air", "Swords", "Queen"],
+    element: ["Air", "Swords", "Perception"],
     good: {
       "Work & Career": "Clear thinking and fair leadership in professional settings.",
       "Relationships": "Honest, mature communication in relationships.",
@@ -1199,7 +1199,7 @@ const tarotCards = [
   {
     name: "King of Swords",
     description: "Authority, integrity, and decisive leadership guided by reason.",
-    element: ["Air", "Swords", "King"],
+    element: ["Air", "Swords", "Authority"],
     good: {
       "Work & Career": "Strategic thinking and intellectual leadership bring success.",
       "Relationships": "Fair, honest partnerships based on mutual respect.",
@@ -1218,7 +1218,7 @@ const tarotCards = [
   {
     name: "Ace of Wands",
     description: "A fresh spark of creativity, passion, and energized new beginnings.",
-    element: ["Fire", "Wands", "Ace"],
+    element: ["Fire", "Wands", "Inspiration"],
     good: {
       "Work & Career": "Creative inspiration and new professional opportunities ignite.",
       "Relationships": "Passionate new connections and romantic sparks.",
@@ -1237,7 +1237,7 @@ const tarotCards = [
   {
     name: "Two of Wands",
     description: "Planning, vision, and the courage to choose the path forward.",
-    element: ["Fire", "Wands", "Two"],
+    element: ["Fire", "Wands", "Planning"],
     good: {
       "Work & Career": "Bold planning and entrepreneurial vision for career growth.",
       "Relationships": "Shared adventures and mutual exploration in partnerships.",
@@ -1256,7 +1256,7 @@ const tarotCards = [
   {
     name: "Three of Wands",
     description: "Expansion, foresight, and the early rewards of visionary action.",
-    element: ["Fire", "Wands", "Three"],
+    element: ["Fire", "Wands", "Expansion"],
     good: {
       "Work & Career": "Successful ventures and expanding professional influence.",
       "Relationships": "Growing partnerships with shared achievements.",
@@ -1275,7 +1275,7 @@ const tarotCards = [
   {
     name: "Four of Wands",
     description: "Celebration, stability, and joyful success after hard work.",
-    element: ["Fire", "Wands", "Four"],
+    element: ["Fire", "Wands", "Stability"],
     good: {
       "Work & Career": "Stable work foundation allows creative freedom.",
       "Relationships": "Harmonious relationships with celebration and joy.",
@@ -1294,7 +1294,7 @@ const tarotCards = [
   {
     name: "Five of Wands",
     description: "Energetic conflict, competition, and creative tension.",
-    element: ["Fire", "Wands", "Five"],
+    element: ["Fire", "Wands", "Competition"],
     good: {
       "Work & Career": "Healthy competition and creative conflict spark innovation.",
       "Relationships": "Passionate discussions strengthen relationship bonds.",
@@ -1313,7 +1313,7 @@ const tarotCards = [
   {
     name: "Six of Wands",
     description: "Victory, recognition, and confidence from your achievements.",
-    element: ["Fire", "Wands", "Six"],
+    element: ["Fire", "Wands", "Victory"],
     good: {
       "Work & Career": "Public recognition and professional success bring confidence.",
       "Relationships": "Shared victories strengthen relationship bonds.",
@@ -1332,7 +1332,7 @@ const tarotCards = [
   {
     name: "Seven of Wands",
     description: "Defending your position with courage and standing firm.",
-    element: ["Fire", "Wands", "Seven"],
+    element: ["Fire", "Wands", "Defense"],
     good: {
       "Work & Career": "Defending your position with courage and determination.",
       "Relationships": "Standing firm in relationship values and boundaries.",
@@ -1351,7 +1351,7 @@ const tarotCards = [
   {
     name: "Eight of Wands",
     description: "Rapid progress, momentum, and messages or action arriving fast.",
-    element: ["Fire", "Wands", "Eight"],
+    element: ["Fire", "Wands", "Speed"],
     good: {
       "Work & Career": "Rapid progress and swift professional developments.",
       "Relationships": "Quickening relationship progress and exciting developments.",
@@ -1370,7 +1370,7 @@ const tarotCards = [
   {
     name: "Nine of Wands",
     description: "Perseverance, resilience, and protecting your hard-won position.",
-    element: ["Fire", "Wands", "Nine"],
+    element: ["Fire", "Wands", "Resilience"],
     good: {
       "Work & Career": "Perseverance through challenges leads to professional victory.",
       "Relationships": "Enduring love and commitment through difficulties.",
@@ -1389,7 +1389,7 @@ const tarotCards = [
   {
     name: "Ten of Wands",
     description: "Overload, responsibility, and the need to release what weighs you down.",
-    element: ["Fire", "Wands", "Ten"],
+    element: ["Fire", "Wands", "Burden"],
     good: {
       "Work & Career": "Heavy responsibilities lead to accomplishment and release.",
       "Relationships": "Carrying relationship burdens with love brings fulfillment.",
@@ -1408,7 +1408,7 @@ const tarotCards = [
   {
     name: "Page of Wands",
     description: "Enthusiastic inspiration, new adventure, and bold creative messages.",
-    element: ["Fire", "Wands", "Page"],
+    element: ["Fire", "Wands", "Exploration"],
     good: {
       "Work & Career": "Creative inspiration and enthusiasm for new professional ventures.",
       "Relationships": "Playful energy and romantic excitement in connections.",
@@ -1427,7 +1427,7 @@ const tarotCards = [
   {
     name: "Knight of Wands",
     description: "Impulsive action, daring ambition, and pursuing your passions quickly.",
-    element: ["Fire", "Wands", "Knight"],
+    element: ["Fire", "Wands", "Impulse"],
     good: {
       "Work & Career": "Bold action and entrepreneurial spirit drive success.",
       "Relationships": "Passionate pursuit and romantic adventure in love.",
@@ -1446,7 +1446,7 @@ const tarotCards = [
   {
     name: "Queen of Wands",
     description: "Confident charisma, creative leadership, and warm determination.",
-    element: ["Fire", "Wands", "Queen"],
+    element: ["Fire", "Wands", "Confidence"],
     good: {
       "Work & Career": "Confident leadership and creative professional influence.",
       "Relationships": "Warm, charismatic partnerships with mutual admiration.",
@@ -1465,7 +1465,7 @@ const tarotCards = [
   {
     name: "King of Wands",
     description: "Visionary leadership, bold action, and pioneering energy.",
-    element: ["Fire", "Wands", "King"],
+    element: ["Fire", "Wands", "Vision"],
     good: {
       "Work & Career": "Natural leadership and visionary business acumen.",
       "Relationships": "Charismatic partnerships based on mutual respect and passion.",
